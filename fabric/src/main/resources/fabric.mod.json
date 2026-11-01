@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "mantelcats",
+  "id": "dwurdycats",
   "version": "${version}",
   "name": "${mod_name}",
   "description": "${mod_description}",
@@ -9,28 +9,28 @@
   ],
   "contact": {},
   "license": "${mod_license}",
-  "icon": "mantelcats_icon.png",
+  "icon": "dwurdycats_icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.mantelgen.mantelcats.fabric.CopycatsImpl"
+      "com.dwurdy.dwurdycats.fabric.CopycatsImpl"
     ],
     "client": [
-      "com.mantelgen.mantelcats.fabric.CopycatsClientImpl"
+      "com.dwurdy.dwurdycats.fabric.CopycatsClientImpl"
     ],
     "fabric-datagen": [
-      "com.mantelgen.mantelcats.datagen.fabric.CCDatagenImpl"
+      "com.dwurdy.dwurdycats.datagen.fabric.CCDatagenImpl"
     ],
     "jei_mod_plugin": [
-      "com.mantelgen.mantelcats.compat.recipe_viewers.CopycatsJEI"
+      "com.dwurdy.dwurdycats.compat.recipe_viewers.CopycatsJEI"
     ],
     "additional-placements-generators": [
-      "com.mantelgen.mantelcats.compat.AdditionalPlacementsCompat"
+      "com.dwurdy.dwurdycats.compat.AdditionalPlacementsCompat"
     ]
   },
   "mixins": [
-    "mantelcats-fabric.mixins.json",
-    "mantelcats-common.mixins.json"
+    "dwurdycats-fabric.mixins.json",
+    "dwurdycats-common.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.15.7",

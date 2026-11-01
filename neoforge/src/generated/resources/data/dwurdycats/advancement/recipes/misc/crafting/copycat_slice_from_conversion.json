@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "dwurdycats:feature_enabled",
+      "feature": "dwurdycats:copycat_vertical_slice",
+      "invert": false
+    },
+    {
+      "type": "dwurdycats:feature_enabled",
+      "feature": "dwurdycats:copycat_slice",
+      "invert": false
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dwurdycats:copycat_vertical_slice"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dwurdycats:crafting/copycat_slice_from_conversion"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dwurdycats:crafting/copycat_slice_from_conversion"
+    ]
+  }
+}

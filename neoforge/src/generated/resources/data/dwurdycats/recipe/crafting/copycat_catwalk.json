@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "dwurdycats:feature_enabled",
+      "feature": "dwurdycats:copycat_catwalk",
+      "invert": false
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "s": {
+      "tag": "dwurdycats:copycat_board"
+    }
+  },
+  "pattern": [
+    "s s",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dwurdycats:copycat_catwalk"
+  }
+}

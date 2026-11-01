@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "mantelcats:copycat_wooden_button",
-    "mantelcats:copycat_stone_button"
+    "dwurdycats:copycat_wooden_button",
+    "dwurdycats:copycat_stone_button"
   ]
 }

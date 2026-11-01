@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "dwurdycats:feature_enabled",
+      "feature": "dwurdycats:copycat_folding_door",
+      "invert": false
+    },
+    {
+      "type": "dwurdycats:feature_enabled",
+      "feature": "dwurdycats:copycat_sliding_door",
+      "invert": false
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dwurdycats:copycat_folding_door"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dwurdycats:copycat_sliding_door"
+  }
+}

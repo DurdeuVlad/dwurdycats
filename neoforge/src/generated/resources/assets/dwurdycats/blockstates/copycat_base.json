@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "base_type=0": {
+      "model": "dwurdycats:block/copycat_base_0"
+    },
+    "base_type=1": {
+      "model": "dwurdycats:block/copycat_base_1"
+    },
+    "base_type=2": {
+      "model": "dwurdycats:block/copycat_base_2"
+    }
+  }
+}

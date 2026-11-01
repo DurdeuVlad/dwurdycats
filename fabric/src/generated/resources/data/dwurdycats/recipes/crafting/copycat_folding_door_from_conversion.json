@@ -1,0 +1,31 @@
+{
+  "type": "porting_lib:conditional",
+  "recipes": [
+    {
+      "fabric:load_conditions": [
+        {
+          "condition": "dwurdycats:feature_enabled",
+          "feature": "dwurdycats:copycat_sliding_door",
+          "invert": false
+        },
+        {
+          "condition": "dwurdycats:feature_enabled",
+          "feature": "dwurdycats:copycat_folding_door",
+          "invert": false
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "dwurdycats:copycat_sliding_door"
+          }
+        ],
+        "result": {
+          "item": "dwurdycats:copycat_folding_door"
+        }
+      }
+    }
+  ]
+}

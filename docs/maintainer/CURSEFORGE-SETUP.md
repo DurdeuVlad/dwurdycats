@@ -1,4 +1,4 @@
-# Maintainer task: publish Mantelcats on CurseForge
+# Maintainer task: publish Dwurdy Cats on CurseForge
 
 > GitHub issues are disabled on this fork (Settings → General → Features → Issues to
 > enable). This file is the "issue" until then — complete the checklist and delete it.
@@ -8,7 +8,7 @@ The tag-driven release pipeline already exists
 
 ## Checklist
 
-- [ ] Create a CurseForge project for Mantelcats (new mod listing; approval can take
+- [ ] Create a CurseForge project for Dwurdy Cats (new mod listing; approval can take
       a day — do this first)
 - [ ] Get the project ID (shown on the project's About page)
 - [ ] Replace the **upstream copycats+ project ID** in both publish blocks:

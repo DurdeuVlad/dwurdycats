@@ -1,10 +1,10 @@
-# Milestone: Mantelcats v2 — material divergence from upstream
+# Milestone: Dwurdy Cats v2 — material divergence from upstream
 
 **Status:** ready-for-handoff (issue 05 is `needs-input` on one owner decision)
 
 ## Outcome
 
-Mantelcats v2 is a materially diverged mod — not a bugfix fork with cosmetic churn —
+Dwurdy Cats v2 is a materially diverged mod — not a bugfix fork with cosmetic churn —
 such that redistribution on CurseForge/Modrinth is defensible under upstream's
 "substantial portion of the mod's code" clause **and** Modrinth's own fork rule
 ("diverged substantially from the original project").
@@ -13,7 +13,7 @@ Divergence is achieved through **substance**, not diff size:
 
 1. Rework the material-storage subsystem — the component all the fork's fixes live in.
 2. Ship 2–3 genuinely new copycat features absent from upstream.
-3. Present as its own product (Mantelcats identity, own docs, own release line).
+3. Present as its own product (Dwurdy Cats identity, own docs, own release line).
 
 Parallel track (repo owner's task, not this milestone): ask upstream for explicit
 publish permission — see decision context in

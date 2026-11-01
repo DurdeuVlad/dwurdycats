@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "dwurdycats:feature_enabled",
+      "feature": "dwurdycats:copycat_vertical_slice",
+      "invert": false
+    },
+    {
+      "type": "dwurdycats:feature_enabled",
+      "feature": "dwurdycats:copycat_slice",
+      "invert": false
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dwurdycats:copycat_vertical_slice"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dwurdycats:copycat_slice"
+  }
+}

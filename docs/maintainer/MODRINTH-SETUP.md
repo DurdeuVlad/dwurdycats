@@ -1,4 +1,4 @@
-# Maintainer task: publish Mantelcats on Modrinth
+# Maintainer task: publish Dwurdy Cats on Modrinth
 
 > GitHub issues are disabled on this fork (Settings → General → Features → Issues to
 > enable). This file is the "issue" until then — complete the checklist and delete it.
@@ -8,7 +8,7 @@ The tag-driven release pipeline already exists
 
 ## Checklist
 
-- [ ] Create a Modrinth project for Mantelcats (submit for review; approval required
+- [ ] Create a Modrinth project for Dwurdy Cats (submit for review; approval required
       before first publish)
 - [ ] Get the project ID (the slug or ID on the project page — both work)
 - [ ] Replace the **upstream copycats+ project ID** in both publish blocks:

@@ -6,7 +6,7 @@
 ## Problem
 
 For v2 to present as its own product — and for redistribution to read as a diverged
-mod rather than a reupload — the distributed metadata should carry Mantelcats
+mod rather than a reupload — the distributed metadata should carry Dwurdy Cats
 identity. Separately, the fabric module has been dead since before the fork
 (upstream commented out the Create dependency and deleted `CopycatMaterialStore`)
 and drags CI surface for no benefit.
@@ -14,9 +14,9 @@ and drags CI surface for no benefit.
 ## Intended behavior
 
 - `neoforge.mods.toml` / `fabric.mod.json` and related metadata: display name
-  **Mantelcats**, own description text, own logo file (reuse `icon.png` only if it
+  **Dwurdy Cats**, own description text, own logo file (reuse `icon.png` only if it
   isn't upstream's branding — check and replace if it is), author/credit lines
-  naming Mantelcats + crediting copycats-plus.
+  naming Dwurdy Cats + crediting copycats-plus.
 - `update.json` URL points at this repo's update source, not upstream's.
 - **Decision recorded (recommended default): keep the `copycats:` mod ID and block
   namespace.** Renaming the namespace breaks every existing world using the blocks;
@@ -40,7 +40,7 @@ and drags CI surface for no benefit.
 
 ## Acceptance criteria
 
-- [ ] The built jar reports itself as Mantelcats in the mod list (in-game or
+- [ ] The built jar reports itself as Dwurdy Cats in the mod list (in-game or
       `mods.toml` content check).
 - [ ] No remaining references to upstream donation/sponsor/Discord surfaces in the
       shipped metadata.
@@ -49,7 +49,7 @@ and drags CI surface for no benefit.
 
 ## Verification surface
 
-Jar metadata inspection + server boot log (`copycats`/`mantelcats` mod entry).
+Jar metadata inspection + server boot log (`copycats`/`dwurdycats` mod entry).
 
 ## Dependencies
 

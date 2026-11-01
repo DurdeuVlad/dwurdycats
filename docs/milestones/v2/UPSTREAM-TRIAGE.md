@@ -1,7 +1,7 @@
 # Upstream issue triage — copycats-plus/copycats
 
 Snapshot of all **183 open issues** on `copycats-plus/copycats` as of this writing,
-classified against Mantelcats (`multiloader`, MC 1.21.1 / NeoForge 21.1.x).
+classified against Dwurdy Cats (`multiloader`, MC 1.21.1 / NeoForge 21.1.x).
 
 > The fork has GitHub issues disabled (by design); upstream fixes are delivered as PRs on
 > `fix/upstream-NNN-*` branches. This document is the bookkeeping surface.

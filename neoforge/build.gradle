@@ -28,7 +28,7 @@ loom {
         data {
             data()
             name "Data Generation"
-            programArgs "--all", "--mod", "mantelcats"
+            programArgs "--all", "--mod", "dwurdycats"
             programArgs "--output", file("src/generated/resources").absolutePath
             programArgs "--existing", project(":common").file("src/main/resources").absolutePath
             programArgs "--existing-mod", "create"
@@ -103,7 +103,7 @@ shadowJar {
 }
 
 remapJar {
-    atAccessWideners.add("mantelcats.accesswidener")
+    atAccessWideners.add("dwurdycats.accesswidener")
     inputFile.set(shadowJar.archiveFile)
     dependsOn shadowJar
     archiveClassifier.set(null)
@@ -135,7 +135,7 @@ tasks.publishMods.dependsOn(tasks.assemble)
 tasks.publishMods.mustRunAfter(tasks.build)
 
 publishMods {
-    changelog = "Check out the detailed changelog at https://github.com/Mantelgen/Mantelcats/blob/multiloader/CHANGELOG.md"
+    changelog = "Check out the detailed changelog at https://github.com/DurdeuVlad/dwurdycats/blob/multiloader/CHANGELOG.md"
     def releaseType = (project.findProperty("releaseType") ?: System.getenv("RELEASE_TYPE") ?: "stable").toString()
     type = releaseType.equalsIgnoreCase("alpha") ? ALPHA : releaseType.equalsIgnoreCase("beta") ? BETA : STABLE
     file = tasks.remapJar.archiveFile

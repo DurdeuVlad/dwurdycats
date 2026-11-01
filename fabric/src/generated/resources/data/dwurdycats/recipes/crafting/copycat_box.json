@@ -1,0 +1,32 @@
+{
+  "type": "porting_lib:conditional",
+  "recipes": [
+    {
+      "fabric:load_conditions": [
+        {
+          "condition": "dwurdycats:feature_enabled",
+          "feature": "dwurdycats:copycat_box",
+          "invert": false
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "s": {
+            "tag": "dwurdycats:copycat_board"
+          }
+        },
+        "pattern": [
+          "ss ",
+          "s s",
+          " ss"
+        ],
+        "result": {
+          "item": "dwurdycats:copycat_box"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

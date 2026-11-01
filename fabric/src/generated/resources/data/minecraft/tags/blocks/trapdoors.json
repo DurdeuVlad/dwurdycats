@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "mantelcats:copycat_trapdoor",
-    "mantelcats:copycat_iron_trapdoor"
+    "dwurdycats:copycat_trapdoor",
+    "dwurdycats:copycat_iron_trapdoor"
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "type": "porting_lib:conditional",
+  "recipes": [
+    {
+      "fabric:load_conditions": [
+        {
+          "condition": "dwurdycats:feature_enabled",
+          "feature": "dwurdycats:copycat_vertical_stairs",
+          "invert": false
+        },
+        {
+          "condition": "dwurdycats:feature_enabled",
+          "feature": "dwurdycats:copycat_stairs",
+          "invert": false
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "tag": "dwurdycats:copycat_stairs"
+          }
+        ],
+        "result": {
+          "item": "dwurdycats:copycat_vertical_stairs"
+        }
+      }
+    }
+  ]
+}

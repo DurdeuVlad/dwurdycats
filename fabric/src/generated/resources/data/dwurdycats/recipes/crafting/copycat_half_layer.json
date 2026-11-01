@@ -1,0 +1,22 @@
+{
+  "type": "porting_lib:conditional",
+  "recipes": [
+    {
+      "fabric:load_conditions": [
+        {
+          "condition": "dwurdycats:feature_enabled",
+          "feature": "dwurdycats:copycat_half_layer",
+          "invert": false
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 16,
+        "ingredient": {
+          "tag": "c:zinc_ingots"
+        },
+        "result": "dwurdycats:copycat_half_layer"
+      }
+    }
+  ]
+}

@@ -1,17 +1,17 @@
-# Mantelcats
+# Dwurdy Cats
 
 A fork of [Create: Copycats+](https://github.com/copycats-plus/copycats) focused on fixing
 multistate material-storage bugs — crashes, memory leaks and invisible blocks that affect
 byte panels, boards, bytes, slabs, half layers and cogwheels.
 
-Mantelcats tracks upstream `copycats-plus/copycats` (`multiloader` branch) and layers
+Dwurdy Cats tracks upstream `copycats-plus/copycats` (`multiloader` branch) and layers
 targeted fixes on top. All copycat content, features and behavior come from upstream;
 this fork only hardens the code around them.
 
 **Target environment:** Minecraft 1.21.1 · NeoForge · Create 6.x
 
 > **Breaking change (4.0.0):** the registry namespace and mod id are now
-> `mantelcats` — every `copycats:*` block/item id moved to `mantelcats:*`.
+> `dwurdycats` — every `copycats:*` block/item id moved to `dwurdycats:*`.
 > Upgrading removes all previously placed copycat content from existing worlds;
 > this fork is intended for fresh installs/new worlds. No migration is provided.
 
@@ -45,7 +45,7 @@ history; each fix ships as an independently reviewable commit.
 ## Downloads
 
 - **GitHub**: build from source (below) or grab tagged builds under
-  [Releases](https://github.com/Mantelgen/Mantelcats/releases) when published.
+  [Releases](https://github.com/DurdeuVlad/dwurdycats/releases) when published.
 - **CurseForge / Modrinth**: publishing is set up but not yet enabled — see the open
   maintainer issues for the remaining configuration steps.
 
@@ -55,8 +55,8 @@ Requires **Java 21** and a checkout **with git tags** (the build derives its ver
 from `git describe`):
 
 ```bash
-git clone https://github.com/Mantelgen/Mantelcats.git
-cd Mantelcats
+git clone https://github.com/DurdeuVlad/dwurdycats.git
+cd Dwurdy Cats
 git fetch https://github.com/copycats-plus/copycats.git '+refs/tags/*:refs/tags/*'
 ./gradlew :neoforge:build
 ```

@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "dwurdycats:feature_enabled",
+      "feature": "dwurdycats:copycat_half_layer",
+      "invert": false
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "s": {
+      "item": "dwurdycats:copycat_half_layer"
+    }
+  },
+  "pattern": [
+    "ss"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dwurdycats:copycat_layer"
+  }
+}

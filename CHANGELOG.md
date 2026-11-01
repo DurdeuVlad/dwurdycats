@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+# Dwurdy Cats (unreleased)
+
+- **Renamed Mantelcats -> Dwurdy Cats.** Mod id `mantelcats` -> `dwurdycats`, package
+  `com.mantelgen.mantelcats` -> `com.dwurdy.dwurdycats`, jar base name `dwurdycats-*`.
+- NeoForge: legacy `copycats:*` **and** `mantelcats:*` registry ids are both aliased to
+  `dwurdycats:*`, so worlds saved under either earlier name keep their blocks and items.
+
+---
+
 # Mantelcats fork changes
 
 Changes below this section are the upstream Copycats+ history, preserved for

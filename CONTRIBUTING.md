@@ -1,14 +1,14 @@
-# Contributing to Mantelcats
+# Contributing to Dwurdy Cats
 
-Mantelcats is a bug-fix fork of [Create: Copycats+](https://github.com/copycats-plus/copycats).
+Dwurdy Cats is a bug-fix fork of [Create: Copycats+](https://github.com/copycats-plus/copycats).
 Contributions that make multistate copycats more correct, more stable or cheaper at
 runtime are welcome; new content blocks belong upstream.
 
 ## Bug reports
 
-Open an [issue](https://github.com/Mantelgen/Mantelcats/issues) and include:
+Open an [issue](https://github.com/DurdeuVlad/dwurdycats/issues) and include:
 
-- Mantelcats version, Minecraft version, NeoForge version, Create version
+- Dwurdy Cats version, Minecraft version, NeoForge version, Create version
 - `latest.log` / crash report — the stack trace is the most useful part
 - Reproduction steps: which copycat, which material, what you did before it broke
 

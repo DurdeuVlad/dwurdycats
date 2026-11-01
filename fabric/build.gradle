@@ -24,7 +24,7 @@ loom {
             name = "Data Generation"
             vmArg "-Dfabric-api.datagen"
             vmArg "-Dfabric-api.datagen.output-dir=${project(":fabric").file("src/generated/resources")}"
-            vmArg "-Dfabric-api.datagen.modid=mantelcats"
+            vmArg "-Dfabric-api.datagen.modid=dwurdycats"
             vmArg "-Dporting_lib.datagen.existing_resources=${project(":common").file("src/main/resources")}"
             vmArg "-Dporting_lib.datagen.existing-mod=create"
 
@@ -115,7 +115,7 @@ tasks.publishMods.dependsOn(tasks.assemble)
 tasks.publishMods.mustRunAfter(tasks.build)
 
 publishMods {
-    changelog = "Check out the detailed changelog at https://github.com/Mantelgen/Mantelcats/blob/multiloader/CHANGELOG.md"
+    changelog = "Check out the detailed changelog at https://github.com/DurdeuVlad/dwurdycats/blob/multiloader/CHANGELOG.md"
     def releaseType = (project.findProperty("releaseType") ?: System.getenv("RELEASE_TYPE") ?: "stable").toString()
     type = releaseType.equalsIgnoreCase("alpha") ? ALPHA : releaseType.equalsIgnoreCase("beta") ? BETA : STABLE
     file = tasks.remapJar.archiveFile

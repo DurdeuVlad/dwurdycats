@@ -1,0 +1,30 @@
+{
+  "type": "porting_lib:conditional",
+  "recipes": [
+    {
+      "fabric:load_conditions": [
+        {
+          "condition": "dwurdycats:feature_enabled",
+          "feature": "dwurdycats:copycat_half_panel",
+          "invert": false
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "s": {
+            "item": "dwurdycats:copycat_half_panel"
+          }
+        },
+        "pattern": [
+          "ss"
+        ],
+        "result": {
+          "item": "create:copycat_panel"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

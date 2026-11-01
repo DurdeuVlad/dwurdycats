@@ -1,4 +1,4 @@
-# Releasing Mantelcats
+# Releasing Dwurdy Cats
 
 Releases are tag-driven. Push a tag matching `v**` and
 [release.yml](.github/workflows/release.yml) builds the NeoForge jar, publishes it to
@@ -22,7 +22,7 @@ The channel is passed to Gradle as `-PreleaseType=<alpha|beta|release>` and
 ## One-time setup (maintainer)
 
 1. **Create the project listings.** Create a CurseForge project and a Modrinth
-   project for Mantelcats. Both need approval before first publish.
+   project for Dwurdy Cats. Both need approval before first publish.
 2. **Replace the upstream project IDs** — they still point at copycats+:
    - `neoforge/build.gradle` and `fabric/build.gradle`:
      - `curseforge { projectId = "968398" }` → your CurseForge project ID
