@@ -95,7 +95,7 @@ jobs:
                 MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
                 CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
               if: env.MODRINTH_TOKEN != '' && env.CURSEFORGE_TOKEN != ''
-              run: ./gradlew :neoforge:publishMods -PMODRINTH_TOKEN=${{ secrets.MODRINTH_TOKEN }} -PCURSEFORGE_TOKEN=${{ secrets.CURSEFORGE_TOKEN }} -PreleaseType=${{ steps.release_type.outputs.type }}
+              run: ./gradlew :neoforge:publishMods -PMODRINTH_TOKEN=${{ secrets.MODRINTH_TOKEN }} -PCURSEFORGE_TOKEN=${{ secrets.CURSEFORGE_TOKEN }} -PCURSEFORGE_PROJECT_ID=${{ vars.CURSEFORGE_PROJECT_ID }} -PMODRINTH_PROJECT_ID=${{ vars.MODRINTH_PROJECT_ID }} -PreleaseType=${{ steps.release_type.outputs.type }}
 
             - name: Find jars
               id: find_jars

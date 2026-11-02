@@ -23,10 +23,9 @@ The channel is passed to Gradle as `-PreleaseType=<alpha|beta|release>` and
 
 1. **Create the project listings.** Create a CurseForge project and a Modrinth
    project for Dwurdy Cats. Both need approval before first publish.
-2. **Replace the upstream project IDs** — they still point at copycats+:
-   - `neoforge/build.gradle` and `fabric/build.gradle`:
-     - `curseforge { projectId = "968398" }` → your CurseForge project ID
-     - `modrinth { projectId = "UT2M39wf" }` → your Modrinth project ID
+2. **Set the project IDs** as Gradle properties (the build no longer hardcodes the
+   upstream copycats+ IDs, so it cannot publish to the wrong listing):
+   - `CURSEFORGE_PROJECT_ID` and `MODRINTH_PROJECT_ID` (repo variables or `-P` flags)
    - The `requires`/`optional` dependency IDs stay — they refer to Create/JEI, not
      this mod.
 3. **Add repository secrets** (Settings → Secrets and variables → Actions):

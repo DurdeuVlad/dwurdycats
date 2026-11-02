@@ -10,14 +10,13 @@ this fork only hardens the code around them.
 
 **Target environment:** Minecraft 1.21.1 · NeoForge · Create 6.x
 
-> **Breaking change (4.0.0):** the registry namespace and mod id are now
-> `dwurdycats` — every `copycats:*` block/item id moved to `dwurdycats:*`.
-> Upgrading removes all previously placed copycat content from existing worlds;
-> this fork is intended for fresh installs/new worlds. No migration is provided.
+> **Id change:** the mod id and registry namespace are now `dwurdycats`. Old
+> `copycats:*` and `mantelcats:*` ids are mapped to the new namespace on load, but this
+> has **not yet been tested on a real world**. Back up worlds before switching.
 
 ## What this fork fixes
 
-All of the following have been verified in-game on a live NeoForge server and client:
+These fixes are new and lightly tested. Most are not yet verified in game against the original reporters' setups:
 
 - **Client crashes on missing/foreign material data** — every `getMaterialItem` lookup in
   render, interaction, kinetic and transform paths now tolerates absent storage entries,
@@ -46,8 +45,8 @@ history; each fix ships as an independently reviewable commit.
 
 - **GitHub**: build from source (below) or grab tagged builds under
   [Releases](https://github.com/DurdeuVlad/dwurdycats/releases) when published.
-- **CurseForge / Modrinth**: publishing is set up but not yet enabled — see the open
-  maintainer issues for the remaining configuration steps.
+- **CurseForge / Modrinth**: not published. Upstream is all rights reserved, so we are
+  waiting for the original authors' permission first.
 
 ## Building
 
@@ -56,7 +55,7 @@ from `git describe`):
 
 ```bash
 git clone https://github.com/DurdeuVlad/dwurdycats.git
-cd Dwurdy Cats
+cd dwurdycats
 git fetch https://github.com/copycats-plus/copycats.git '+refs/tags/*:refs/tags/*'
 ./gradlew :neoforge:build
 ```
@@ -82,11 +81,10 @@ connected textures. See the
 ## License
 
 The original Copycats+ code is **all rights reserved** by its authors
-([LICENSE](LICENSE)); upstream permits modpack inclusion and modification but requires
-a substantial portion of the code to be modified before redistribution. Please respect
-those terms, and prefer reporting bugs to
-[upstream](https://github.com/copycats-plus/copycats/issues) when they are not
-fork-specific.
+([LICENSE](LICENSE)). We have asked the authors for permission to maintain and publish
+this fork and will not publish on CurseForge or Modrinth without it. Please report
+bugs that are not fork-specific to
+[upstream](https://github.com/copycats-plus/copycats/issues).
 
 ## Contributing
 

@@ -144,7 +144,7 @@ publishMods {
 
     modrinth {
         accessToken = project.findProperty("MODRINTH_TOKEN")
-        projectId = "UT2M39wf"
+        projectId = project.findProperty("MODRINTH_PROJECT_ID")
         minecraftVersions.add(minecraft_version)
         environment = CLIENT_AND_SERVER
 
@@ -158,7 +158,7 @@ publishMods {
 
     curseforge {
         accessToken = project.findProperty("CURSEFORGE_TOKEN")
-        projectId = "968398"
+        projectId = project.findProperty("CURSEFORGE_PROJECT_ID")
         minecraftVersions.add(minecraft_version)
         client = true
         server = true
